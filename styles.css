@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    background-color: #121725;   
+}
+
+/* **Main-Navigation** */
+
+.main-container {
+    margin-left: 165px;
+    position: relative;
+    display: flex;
+}
+
+/* **main-container-left */
+
+/* *** Navigation Logo****/
+.main-container-left {
+    width: 387px;
+}
+.nav-logo {
+    margin-top: 102px;    
+    position: relative;
+    z-index: 10;
+}
+
+.main-content-box {
+    width: 723px;
+    position: absolute;
+    top: 267px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    background-color: #121725;
+}
+.main-content {
+    padding: 88px 58px 0 0;
+    order: 1;
+}
+.main-content h1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #54e6af;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.main-content p {
+    width: 445px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #c2cbe5;
+    margin-bottom: 40px;
+}
+.main-content span {
+    color: #fff;
+}
+.cta {
+    display: flex;
+    align-items: center;
+    width: 427px;
+    background-color: #2c344b;
+    border-radius: 28px;
+    margin-bottom: 64px;
+    order: 2;
+}
+.input-box {
+    height: 56px;
+    margin-left: 32px;
+}
+.input-field {
+    align-items: center;
+}
+input {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: #2c344b;
+    border: none;
+    padding: 12px 150px 9px 0px;
+    color: #fff;
+}
+.error-box {
+    position: relative;
+}
+.error-msg {
+    color: #fb3e3e;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    position: absolute; 
+    top: 10px; 
+    display: none;
+}
+.btn-box {
+    margin-left: -90px;
+    text-align: center;
+}
+.btn {
+    width: 162px;
+    height: 46px;
+    background-color: #54e6af;
+    border-radius: 26px;
+    border: none;
+    cursor: pointer;
+    color: #2c344b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.btn:hover {
+    background-color: #b3ffe2;
+}
+.podcasts {
+    display: flex;
+    gap: 40px;
+    height: 29px;  
+    order: 3;
+}
+
+/* **main-container-right */
+.main-container-right {
+    margin-top: 135px;
+}
+.bg-image {
+    display: flex;
+    justify-content: end;
+}
+
+.dots-pattern {
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+    margin-bottom: 78px;   
+}
+
+/* **MEDIA*** */
+@media only screen and (max-width: 768px) {
+    .nav-logo {
+        margin: 50px 0 0 39px;
+    }
+    .main-container {
+        margin: 0px;
+    }
+    .main-content {
+        padding: 93px 0 0 0;
+    }
+    .main-content-box {
+        width: 639px;
+        left: 39px;
+        top: 258px;
+    }
+    .main-content h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom:  31px;
+    }
+    .main-container-right {
+        margin-top: 0;
+    }
+    .dots-pattern {
+        position: absolute;
+        justify-content: start;
+        margin-left: 30px;
+        right: 506px;
+        margin-bottom: 0;
+        margin-top: 153px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+       flex-direction: column-reverse;
+       width: 375px;
+    }
+    .main-container-left {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-logo {
+        margin:  62px 0 57px 120px;     
+    }
+    .main-content {
+        padding: 0 0 0 0;
+        order: 1;
+    }
+    .main-content-box {
+        width: 327px;
+        top: 175px;
+        left: 24px;
+        margin: 0 auto;
+        
+    }
+    .main-content h1 {
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 16px;
+        text-align: center;
+        opacity: 0.5;
+    }
+    .main-content p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 327px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        opacity: 0.5;
+    }
+    .cta {
+        width: 327px;
+        height: 108px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        order: 3;
+        margin-top: 48px;
+        background-color: inherit;
+    }
+    .input-box {
+        margin-left: 0;
+        
+    }
+    input {
+        padding-left: 32px;
+        padding-right: 100px;
+        border-radius: 26px;
+    }
+    
+    .error-msg {
+        display: none;
+        top: 5px;
+        padding-left: 32px;       
+    }
+    .btn-box {
+        width: 326px;
+        height: 46px;
+        margin-left: 0px;   
+    }
+    .btn {
+        width: 305px;
+    }
+    .main-container-right {
+        margin-top: 0;
+        opacity: 0.2;
+    }
+    .podcasts {
+        height: 17px;
+        margin: 0 auto;
+        gap: 23px;
+        order: 2;
+        opacity: 0.5;
+    }
+    .podcast-icons {
+        width: 56px;
+    }
+   .dots-pattern {
+        display: none;
+   } 
+}
